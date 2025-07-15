@@ -8,9 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Kintosh Laundry Logo" class="logo">
-    <nav>
+  <header class="main-header">
+  <div class="container">
+    <div class="logo-wrap">
+      <img src="images/logo.png" alt="Kintosh Laundry Logo" class="logo">
+      <span class="brand-name">Kintosh Laundry</span>
+    </div>
+    <nav class="main-nav">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -19,13 +23,24 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
+
+
 
   <section id="home" class="hero">
-    <h2>Clean Clothes, Happy Life!</h2>
-    <p>Reliable, affordable, and fast laundry service.</p>
-    <a href="#contact" class="btn">Book a Pickup</a>
+  <div class="hero-content">
+    <div class="hero-logo">
+      <img src="images/logo.png" alt="Kintosh Logo">
+    </div>
+    <div class="hero-text">
+      <h2>Clean Clothes, Happy Life!</h2>
+      <p>Reliable, affordable, and fast laundry service.</p>
+      <a href="#contact" class="btn">Book a Pickup</a>
+    </div>
+  </div>
   </section>
+
 
   <section id="about">
     <h2>About Us</h2>
@@ -39,6 +54,8 @@
   <div class="service-item" onclick="toggleDescription(this)">
     <h3>🧺 Wash & Fold</h3>
     <div class="description">
+      <div class="service-flex">
+        <div class="text">
       <p>Our Wash & Fold service is ideal for everyday wear. We wash, dry, and neatly fold your laundry for easy storage.</p>
       <strong>We handle:</strong>
       <ul>
@@ -48,10 +65,12 @@
         <li>Light bedsheets</li>
         <li>Socks & Towels</li>
       </ul>
+        </div>
       <div class="images">
         <img src="images/washing-clothes.jpg" alt="Washing Clothes">
         <img src="images/folded-clothes.jpg" alt="Folded Clothes">
       </div>
+    </div>
     </div>
   </div>
 
@@ -59,6 +78,8 @@
   <div class="service-item" onclick="toggleDescription(this)">
     <h3>👕 Ironing & Pressing</h3>
     <div class="description">
+      <div class="service-flex">
+        <div class="text">
       <p>We use safe heat and steam ironing techniques to keep your clothes wrinkle-free and sharp-looking.</p>
       <strong>Items typically pressed:</strong>
       <ul>
@@ -68,10 +89,12 @@
         <li>School Clothes</li>
         <li>Office Attire</li>
       </ul>
+        </div>
       <div class="images">
         <img src="images/ironing-clothes.jpg" alt="Ironing Clothes">
         <img src="images/pressed-shirts.jpg" alt="Pressed Shirts">
       </div>
+    </div>
     </div>
   </div>
 
@@ -79,6 +102,8 @@
   <div class="service-item" onclick="toggleDescription(this)">
     <h3>🧥 Dry Cleaning</h3>
     <div class="description">
+      <div class="service-flex">
+        <div class="text">
       <p>Perfect for delicate or expensive clothing that can’t be machine-washed. We use non-water-based solvents to clean your items gently.</p>
       <strong>Dry cleaned items include:</strong>
       <ul>
@@ -87,10 +112,12 @@
         <li>Winter Jackets</li>
         <li>Delicate Fabrics (e.g., Silk, Velvet)</li>
       </ul>
+        </div>
       <div class="images">
         <img src="images/dry-cleaning-machine.jpg" alt="Dry Cleaning">
         <img src="images/cleaned-suits.jpg" alt="Cleaned Suits">
       </div>
+    </div>
     </div>
   </div>
 
@@ -98,6 +125,8 @@
   <div class="service-item" onclick="toggleDescription(this)">
     <h3>🛏️ Duvet Cleaning</h3>
     <div class="description">
+      <div class="service-flex">
+        <div class="text">
       <p>We deep-clean your duvets and bed covers using industrial-grade washers. Our process removes dust mites, odors, and bacteria.</p>
       <strong>Duvet types cleaned:</strong>
       <ul>
@@ -106,10 +135,12 @@
         <li>Mattress Covers</li>
         <li>Thick Bedspreads</li>
       </ul>
+        </div>
       <div class="images">
         <img src="images/duvet-cleaning.jpg" alt="Duvet Cleaning">
         <img src="images/fresh-duvet.jpg" alt="Clean Duvet">
       </div>
+    </div>
     </div>
   </div>
 
@@ -117,6 +148,8 @@
   <div class="service-item" onclick="toggleDescription(this)">
     <h3>🧽 Carpet Cleaning</h3>
     <div class="description">
+      <div class="service-flex">
+        <div class="text">
       <p>Our carpet cleaning removes stains, dirt, and allergens. We use deep shampooing and fast-dry techniques to bring carpets back to life.</p>
       <strong>We clean:</strong>
       <ul>
@@ -125,10 +158,12 @@
         <li>Synthetic Mats</li>
         <li>Bathroom and Entry Rugs</li>
       </ul>
+        </div>
       <div class="images">
         <img src="images/carpet-shampoo.jpg" alt="Carpet Shampooing">
         <img src="images/clean-carpet.jpg" alt="Clean Carpet">
       </div>
+    </div>
     </div>
   </div>
   </section>
