@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kintosh Laundry</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Kintosh Laundry Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Clean Clothes, Happy Life!</h2>
+    <p>Reliable, affordable, and fast laundry service.</p>
+    <a href="#contact" class="btn">Book a Pickup</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Kintosh Laundry offers professional laundry and dry-cleaning services with same-day pickup and delivery. We’re committed to giving your clothes the best care.</p>
+  </section>
+
+  <section id="services">
+  <h2>Our Services</h2>
+
+  <!-- 🧺 Wash & Fold -->
+  <div class="service-item" onclick="toggleDescription(this)">
+    <h3>🧺 Wash & Fold</h3>
+    <div class="description">
+      <p>Our Wash & Fold service is ideal for everyday wear. We wash, dry, and neatly fold your laundry for easy storage.</p>
+      <strong>We handle:</strong>
+      <ul>
+        <li>T-shirts</li>
+        <li>Trousers & Jeans</li>
+        <li>Underwear</li>
+        <li>Light bedsheets</li>
+        <li>Socks & Towels</li>
+      </ul>
+      <div class="images">
+        <img src="images/washing-clothes.jpg" alt="Washing Clothes">
+        <img src="images/folded-clothes.jpg" alt="Folded Clothes">
+      </div>
+    </div>
+  </div>
+
+  <!-- 👕 Ironing & Pressing -->
+  <div class="service-item" onclick="toggleDescription(this)">
+    <h3>👕 Ironing & Pressing</h3>
+    <div class="description">
+      <p>We use safe heat and steam ironing techniques to keep your clothes wrinkle-free and sharp-looking.</p>
+      <strong>Items typically pressed:</strong>
+      <ul>
+        <li>Shirts & Blouses</li>
+        <li>Trousers & Skirts</li>
+        <li>Uniforms</li>
+        <li>School Clothes</li>
+        <li>Office Attire</li>
+      </ul>
+      <div class="images">
+        <img src="images/ironing-clothes.jpg" alt="Ironing Clothes">
+        <img src="images/pressed-shirts.jpg" alt="Pressed Shirts">
+      </div>
+    </div>
+  </div>
+
+  <!-- 🧥 Dry Cleaning -->
+  <div class="service-item" onclick="toggleDescription(this)">
+    <h3>🧥 Dry Cleaning</h3>
+    <div class="description">
+      <p>Perfect for delicate or expensive clothing that can’t be machine-washed. We use non-water-based solvents to clean your items gently.</p>
+      <strong>Dry cleaned items include:</strong>
+      <ul>
+        <li>Suits & Blazers</li>
+        <li>Dresses & Gowns</li>
+        <li>Winter Jackets</li>
+        <li>Delicate Fabrics (e.g., Silk, Velvet)</li>
+      </ul>
+      <div class="images">
+        <img src="images/dry-cleaning-machine.jpg" alt="Dry Cleaning">
+        <img src="images/cleaned-suits.jpg" alt="Cleaned Suits">
+      </div>
+    </div>
+  </div>
+
+  <!-- 🛏️ Duvet Cleaning -->
+  <div class="service-item" onclick="toggleDescription(this)">
+    <h3>🛏️ Duvet Cleaning</h3>
+    <div class="description">
+      <p>We deep-clean your duvets and bed covers using industrial-grade washers. Our process removes dust mites, odors, and bacteria.</p>
+      <strong>Duvet types cleaned:</strong>
+      <ul>
+        <li>Small and Large Duvets</li>
+        <li>Comforters</li>
+        <li>Mattress Covers</li>
+        <li>Thick Bedspreads</li>
+      </ul>
+      <div class="images">
+        <img src="images/duvet-cleaning.jpg" alt="Duvet Cleaning">
+        <img src="images/fresh-duvet.jpg" alt="Clean Duvet">
+      </div>
+    </div>
+  </div>
+
+  <!-- 🧽 Carpet Cleaning -->
+  <div class="service-item" onclick="toggleDescription(this)">
+    <h3>🧽 Carpet Cleaning</h3>
+    <div class="description">
+      <p>Our carpet cleaning removes stains, dirt, and allergens. We use deep shampooing and fast-dry techniques to bring carpets back to life.</p>
+      <strong>We clean:</strong>
+      <ul>
+        <li>Fluffy Carpets</li>
+        <li>Wool Rugs</li>
+        <li>Synthetic Mats</li>
+        <li>Bathroom and Entry Rugs</li>
+      </ul>
+      <div class="images">
+        <img src="images/carpet-shampoo.jpg" alt="Carpet Shampooing">
+        <img src="images/clean-carpet.jpg" alt="Clean Carpet">
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-card">
+      <h3>Standard Wash</h3>
+      <p>Ksh 49 per kg</p>
+    </div>
+    <div class="pricing-card">
+      <h3>Ironing</h3>
+      <p>Ksh 10 per item</p>
+    </div>
+    <div class="pricing-card">
+      <h3>small Duvet</h3>
+      <p>Ksh 160 per item</p>
+    </div>
+     <div class="pricing-card">
+      <h3>Large Duvet</h3>
+      <p>Ksh 200 per item</p>
+    </div> <div class="pricing-card">
+      <h3>Fluffy carpet</h3>
+      <p>Ksh 200 per item</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/samuelmuraya15465@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://kintosh-laundry.netlify.app/thank-you.html">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <!-- Service Dropdown -->
+      <label for="service">Select a Service:</label>
+      <select name="service" id="service" required>
+        <option value="">-- Choose Service --</option>
+        <option value="Wash & Fold">🧺 Wash & Fold</option>
+        <option value="Ironing & Pressing">👕 Ironing & Pressing</option>
+        <option value="Dry Cleaning">🧥 Dry Cleaning</option>
+        <option value="Duvet Cleaning">🛏️ Duvet Cleaning</option>
+        <option value="Carpet Cleaning">🧽 Carpet Cleaning</option>
+      </select>
+
+      <!-- Pickup & Delivery Option -->
+      <label for="pickup">Pickup & Delivery?</label>
+      <select name="pickup" id="pickup" required>
+        <option value="">-- Select --</option>
+        <option value="Yes">✅ Yes</option>
+        <option value="No">❌ No</option>
+      </select>
+
+      <!-- Location Dropdown -->
+      <label for="location">Your Location:</label>
+      <select name="location" id="location" required>
+        <option value="">-- Choose Location --</option>
+        <option value="Nchiru">Nchiru</option>
+        <option value="Mascan">Mascan</option>
+        <option value="Kunene">Kunene</option>
+        <option value="Aina">Aina</option>
+        <option value="St Rita">St Rita</option>
+        <option value="Khan">Khan</option>
+        <option value="Carlifornia">Carlifornia</option>
+        <option value="Mukaria">Mukaria</option>
+        <option value="KeMU">KeMU</option>
+
+        <option value="Other">Other</option>
+      </select>
+
+      <!-- Message (optional comments) -->
+      <textarea name="message" placeholder="Additional details (optional)"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p>📍 Location: Nchiru Center, next to Redeemed church </p>
+    <p>📞 Phone: <a href="tel:+254700159618">+254700159618</a></p>
+    <p>💬 <a href="https://wa.me/254700159618" target="_blank">Chat on WhatsApp</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kintosh Laundry. All rights reserved.</p>
+  </footer>
+  <script>
+  function toggleDescription(element) {
+    const desc = element.querySelector('.description');
+    desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
