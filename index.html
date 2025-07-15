@@ -252,11 +252,32 @@
     <p>&copy; 2025 Kintosh Laundry. All rights reserved.</p>
   </footer>
   <script>
-  function toggleDescription(element) {
-    const desc = element.querySelector('.description');
-    desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+  function toggleDescription(clickedElement) {
+    // Close all other descriptions
+    const allDescriptions = document.querySelectorAll('.service-item .description');
+    allDescriptions.forEach(desc => {
+      desc.style.display = 'none';
+    });
+
+    // Open the clicked one
+    const currentDesc = clickedElement.querySelector('.description');
+    currentDesc.style.display = 'block';
   }
 </script>
+<script>
+  function toggleDescription(clickedElement) {
+    // Close all other descriptions
+    const allDescriptions = document.querySelectorAll('.service-item .description');
+    allDescriptions.forEach(desc => {
+      desc.style.display = 'none';
+    });
+
+    // Open the clicked one
+    const currentDesc = clickedElement.querySelector('.description');
+    currentDesc.style.display = 'block';
+  }
+</script>
+
 
 </body>
 </html>
